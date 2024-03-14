@@ -26,12 +26,15 @@ class AppColor {
 
   static const Color bodysubTitleTextColor = Color(0xffC0C0CF);
 
+  static const Color successMsgTextColor = Color(0xff7AD08A);
+
 //* Buttn text color
 
   static const Color submitBtnTextWhite = Colors.white;
 
   static const Color backButtonColor = Color(0xFF4A4A6A);
   static const Color backButtonBorderColor = Colors.transparent;
+
 
 //* Buttn border color
 

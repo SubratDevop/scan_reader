@@ -9,6 +9,7 @@ import '../core/resources/screen_size.dart';
 import '../core/resources/textFormField_decoraion.dart';
 import '../core/widgets/app_bar.dart';
 import '../core/widgets/bg_gradient_container.dart';
+import 'checkout_scanBook_screen.dart';
 
 class CheckoutScreen extends StatelessWidget {
   const CheckoutScreen({super.key});
@@ -32,7 +33,7 @@ class CheckoutScreen extends StatelessWidget {
                   children: [
                     Column(
                       children: [
-                        CustmAppBarWidget(),
+                        CustmAppBarWidget(onTapMenu: ()=> Get.to(const ChkoutScanBookScreen()),),
                         const SizedBox(
                           height: 20,
                         ),
