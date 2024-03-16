@@ -4,17 +4,17 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'core/widgets/app_status_bar.dart';
-import 'screens/checkout_screen.dart';
+import 'screens/testing_screen.dart';
 
 void main() {
   runApp(
-    const MyApp()
+    // const MyApp()
     //! with device preview
-    // DevicePreview(
-    //   enabled: !kReleaseMode,
+    DevicePreview(
+      enabled: !kReleaseMode,
 
-    //   builder: (context) => const MyApp(), // Wrap your app
-    // ),
+      builder: (context) => const MyApp(), // Wrap your app
+    ),
   );
 }
 
@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
     AppStatusBar.splashStatusBarColor();
     return ScreenUtilInit(
       designSize: const Size(360, 690),
-      minTextAdapt: true,
+    
       splitScreenMode: true,
       child: GetMaterialApp(
         debugShowCheckedModeBanner: false,
@@ -39,7 +39,8 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: const CheckoutScreen(),
+        // home: const CheckoutScreen(),
+        home: const TestingScreen(),
       ),
     );
   }

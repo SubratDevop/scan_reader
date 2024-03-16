@@ -69,33 +69,35 @@ class ReturnScreen extends StatelessWidget {
                               ),
                             ),
                           ),
-                          Row(
-                            children: [
-                              Expanded(
-                                child: Container(
-                                  height: 1,
-                                  color: Colors.white,
-                                ),
-                              ),
-                              Padding(
-                                padding: const EdgeInsets.symmetric(
-                                  vertical: 2,
-                                  horizontal: 10,
-                                ),
-                                child: TextWidget2(
-                                  tittle: "Or",
-                                  textSize: AppTextSize.h2Textsize,
-                                  textWeight: FontWeight.w400,
-                                ),
-                              ),
-                              Expanded(
-                                child: Container(
-                                  height: 1,
-                                  color: Colors.white,
-                                ),
-                              )
-                            ],
-                          ),
+                          // Row(
+                          //   children: [
+                          //     Expanded(
+                          //       child: Container(
+                          //         height: 1,
+                          //         color: Colors.white,
+                          //       ),
+                          //     ),
+                          //     Padding(
+                          //       padding: const EdgeInsets.symmetric(
+                          //         vertical: 2,
+                          //         horizontal: 10,
+                          //       ),
+                          //       child: TextWidget2(
+                          //         tittle: "Or",
+                          //         textSize: AppTextSize.h2Textsize,
+                          //         textWeight: FontWeight.w400,
+                          //       ),
+                          //     ),
+                          //     Expanded(
+                          //       child: Container(
+                          //         height: 1,
+                          //         color: Colors.white,
+                          //       ),
+                          //     )
+                          //   ],
+                          // ),
+                          
+                          
                           //^ Enter Book id
                           Container(
                             width: ScreenSize.width(context),
